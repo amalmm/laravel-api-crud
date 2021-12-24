@@ -1,7 +1,9 @@
 ## Installation
-change.env.exmple to .env
-
-create demo-app db mysql
+change
+```shell
+.env.exmple to .env
+```
+create demo-app, in db mysql
 ```php
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -11,7 +13,9 @@ DB_USERNAME=root
 DB_PASSWORD=
 
 ```
-run
+
+## run
+
 ```shell
 php artisan serve
 ```
@@ -20,3 +24,23 @@ php artisan migrte
 ``` 
  
  
+## url
+index | get
+```shell
+http://127.0.0.1:8000/api/amal
+``` 
+
+create | input ( name, email ) | post  
+```shell
+http://127.0.0.1:8000/api/amal
+``` 
+
+edit | input ( name, email ) | put
+```shell
+http://127.0.0.1:8000/api/amal/{amal}
+``` 
+
+delete | input ( name, email ) | delete
+```shell
+http://127.0.0.1:8000/api/amal/{amal}
+``` 
